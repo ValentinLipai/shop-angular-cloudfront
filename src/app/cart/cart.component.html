@@ -12,7 +12,7 @@
 
       <mat-card-content>
         <mat-vertical-stepper #stepper [linear]="true">
-          <!-- Review your cart STEP -->
+          <!-- Review your cart STEP  Test CodeBuild -->
           <mat-step label="Review your cart" [completed]="state.cartEmpty">
             <ng-container *ngIf="state.cartEmpty; else emptyCartTemplate">
               <app-order-summary
@@ -95,7 +95,10 @@
               </button>
               <button
                 (click)="submit()"
-                color="primary" class="text-uppercase" mat-flat-button>
+                color="primary"
+                class="text-uppercase"
+                mat-flat-button
+              >
                 place order
               </button>
             </div>
